@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abyss Angel</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="senha.css" />
 </head>
-<body>
-    <body class="matrix-bg">
-        <div class="matrix-container">
-          <h1 class="matrix-text" data-text="h. 4 ty1u2q t4 8u7.">Abyss Angel</h1>
-          <div class="rain"></div>
-        </div>
-      </body>       
+<body class="matrix-bg">
+    <!-- Seu conteúdo original -->
+    <div class="matrix-container">
+        <h1 class="matrix-text" data-text="`] @ 5:=6>2 5@ D6C]">Abyss Angel</h1>
+        <div class="rain"></div>
+    </div>
+
+    <!-- Formulário de senha separado -->
+    <div class="password-container">
+        <h1>Digite a senha</h1>
+        <!-- Alterado o type para text -->
+        <input type="text" id="senha" placeholder="Senha de acesso" />
+        <p class="erro" id="erro"></p>
+    <div class="centered-text">3. Pradyumna</div>
+    <div class="centered-text2">1. Vasudeva</div>
+    <div class="centered-text3">4. Aniruddha</div>
+    <div class="centered-text4">2. Sankarshana</div>
+    </div>
+
+    <script>
+      function verificarSenha() {
+        const senha = document.getElementById("senha").value;
+        const senhaCorreta = "Vasudeva Sankarshana Pradyumna Aniruddha";
+        const erro = document.getElementById("erro");
+    
+        if (senha === senhaCorreta) {
+          window.location.href = "https://www.dcode.fr/rot-47-cipher"; // redirecionamento
+        } else {
+          erro.textContent = "";
+        }
+      }
+    
+      // Detecta quando o usuário pressiona Enter dentro do campo de senha
+      document.getElementById("senha").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          verificarSenha();
+        }
+      });
+    </script>    
 </body>
 </html>

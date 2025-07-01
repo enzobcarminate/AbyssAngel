@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Pixeland';
+    src: url('alagard.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.password-container {
+    position: fixed;
+    bottom: 50px; /* Subiu um pouco da parte inferior */
+    left: 50%; /* Centralizado horizontalmente */
+    transform: translateX(-50%); /* Mantém o contêiner centralizado */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 220px;
+    font-family: 'Pixeland', sans-serif;
+    color: white;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    z-index: 1000;
+}
+
+.password-container h1 {
+    font-size: 20px; /* Destaque para "Digite a senha" */
+    margin-bottom: 10px;
+}
+
+.password-container input[type="text"] { /* Atualizado para "text" */
+    font-family: 'Pixeland', sans-serif;
+    padding: 4px;
+    font-size: 14px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.password-container .erro {
+    font-family: 'Pixeland', sans-serif;
+    color: #ff6b6b00;
+    margin-top: 5px;
+    min-height: 12px;
+}
